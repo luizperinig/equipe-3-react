@@ -1,0 +1,26 @@
+.Container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.navbar {
+  position: absolute;
+  width: 253px;
+  height: 1024px;
+  left: 0px;
+  top: 0px;
+  background: #000000;
+}
+
+.dashboard {
+  position: absolute;
+  width: 1259px;
+  height: 1025px;
+  left: 181px;
+  top: -1px;
+  background: linear-gradient(180deg, #17A6E4 0%, #000000 80.84%);
+  mix-blend-mode: normal;
+}
