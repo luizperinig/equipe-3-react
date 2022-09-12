@@ -1,0 +1,133 @@
+.dashboard {
+    position: absolute;
+    width: 1259px;
+    height: 1025px;
+    left: 181px;
+    top: -1px;
+    background: linear-gradient(180deg, #17A6E4 0%, #000000 80.84%);
+    mix-blend-mode: normal;
+  }
+
+.img {
+    position: absolute;
+    width: 224px;
+    height: 224px;
+    left: 254px;
+    top: 204px;
+}
+
+#img2{
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    left: 254px;
+    top: 573px;
+    border-radius: 100%;
+    background: #3FE168;  
+}
+
+#img3{
+    position: absolute;
+    width: 34px;
+    height: 29px;
+    left: 301px;
+    top: 589px;
+    background: #1D4557;
+    transform: rotate(90deg);
+}
+
+#img4{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42.8961px;
+    line-height: 52px;
+    color: #CCCCCC;
+    
+}
+
+#d1{
+    position: absolute;
+    width: 61px;
+    height: 21px;
+    left: 522px;
+    top: 275px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+#d2{
+    position: absolute;
+    width: 248px;
+    height: 58px;
+    left: 520px;
+    top: 308px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+
+#d3{
+    position: absolute;
+    width: 320px;
+    height: 21px;
+    left: 522px;
+    top: 374px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+#d4{
+    position: absolute;
+    width: 173px;
+    height: 21px;
+    left: 522px;
+    top: 406px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+    color: #FFFFFF;    
+}
+
+#d5{
+    position: absolute;
+    width: 72px;
+    height: 22px;
+    left: 709px;
+    top: 406px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.44);
+}
+
+#d6{
+    display: flex; 
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    left: 254px;
+    top: 573px;
+    border-radius: 100%;
+    background: #3FE168;  
+}
