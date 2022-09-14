@@ -16,7 +16,7 @@
     top: 204px;
 }
 
-.img2{
+#img2{
     position: absolute;
     width: 65px;
     height: 65px;
@@ -124,15 +124,17 @@
     color: rgba(255, 255, 255, 0.44);
 }
 
-.d6{
-    display: flex; 
+#d6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     width: 65px;
     height: 65px;
     left: 254px;
     top: 573px;
     border-radius: 100%;
-    background: #3FE168;  
+    background: #3FE168; 
 }
 
 #d8{
