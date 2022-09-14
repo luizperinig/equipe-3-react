@@ -1,7 +1,6 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Navbar from './componentes/Navbar.js'
 import Dashboard from './componentes/Dashboard.js'
-
 import "./App.css"
 
 

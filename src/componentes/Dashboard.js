@@ -1,11 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Dashboard.css'
 import image2 from './imagens/image2.png'
 import elipse1 from './imagens/Ellipse1.svg'
 import coracao2 from './imagens/coracao2.svg'
 import polygon from './imagens/Polygon1.svg'
+import coracaoVerde from './imagens/coracaoVerde.svg'
 
 export default function Dashboard(){
+    const [favorite,setFavorite]=useState(false)
+
+
     return(
         <div className='dashboard'>
             <img className='img' src={image2}/>
@@ -17,9 +21,15 @@ export default function Dashboard(){
             <div id='d6'>
                 <img classname='img2' src={elipse1}/>
                 <img className='img3' src={polygon}/>
-                <img className='img4' src={coracao2}/>
+                <img className='img4' src={favorite?coracao2:coracaoVerde}
+                    onClick={()=>setFavorite(!favorite)}
+                />
             </div>
-            
+            <div>
+                <p className='p1'>#Título</p>
+                <p className='p2'>Álbum</p>
+                <div id='d8'></div>
+            </div>
         </div>
     );
 }

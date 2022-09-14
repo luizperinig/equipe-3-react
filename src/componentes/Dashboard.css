@@ -16,7 +16,7 @@
     top: 204px;
 }
 
-#img2{
+.img2{
     position: absolute;
     width: 65px;
     height: 65px;
@@ -36,7 +36,7 @@
     transform: rotate(90deg);
 }
 
-#img4{
+.img4{
     position: absolute;
     left: 0%;
     right: 0%;
@@ -48,7 +48,10 @@
     font-size: 42.8961px;
     line-height: 52px;
     color: #CCCCCC;
-    
+}
+
+.img4:hover{
+    cursor: pointer;
 }
 
 #d1{
@@ -121,7 +124,7 @@
     color: rgba(255, 255, 255, 0.44);
 }
 
-#d6{
+.d6{
     display: flex; 
     position: absolute;
     width: 65px;
@@ -130,4 +133,42 @@
     top: 573px;
     border-radius: 100%;
     background: #3FE168;  
+}
+
+#d8{
+    position: absolute;
+    width: 1133px;
+    height: 0px;
+    left: 242px;
+    top: 781px;
+    border: 1px solid #CCCCCC;
+    transform: rotate(-0.1deg);
+}
+
+.p1{
+    position: absolute;
+    width: 77px;
+    height: 22px;
+    left: 254px;
+    top: 744px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #D9D9D9;    
+}
+
+.p2{
+    position: absolute;
+    width: 64px;
+    height: 22px;
+    left: 920px;
+    top: 740px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #D9D9D9;
 }
