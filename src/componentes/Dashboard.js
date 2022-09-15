@@ -17,21 +17,25 @@ export default function Dashboard(){
             <div id='d3'>Red Hot Chili Peppers, Coldplay e mais</div>
             <div id='d4'>Spotify - 50 músicas</div> 
             <div id='d5'>1h 7min</div> 
-            <div>
-                <div id='d6'>
-                    <img className='img3' src={polygon}/>
-                </div> 
-                <img className='img4' src={favorite?coracao2:coracaoVerde}
+            <div  id='d6'>
+                <img className='img3' src={polygon}/>
+                <img className='img4' src={favorite?coracaoVerde:coracao2}
                     onClick={()=>setFavorite(!favorite)}
                 />
-            </div>
-           
-            <div>
-                <p className='p1'>#Título</p>
-                <p className='p2'>Álbum</p>
                 
             </div>
-            <div id='d8'></div>
+           <div id='d7'></div>
+           <div id='d8'></div> 
+           <div id='d9'></div>
+           <div id='d10'></div>
+           <div id='d11'></div> 
+           <div id='d12'></div>
+            <div>
+                <p className='p1'>#TÍTULO</p>
+                <p className='p2'>ÁLBUM</p>
+                
+            </div>
+            <div id='d13'></div>
         </div>
     );
 }
