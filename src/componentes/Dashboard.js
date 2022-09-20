@@ -1,9 +1,16 @@
 import React, {useState} from 'react'
 import './Dashboard.css'
-import image2 from './imagens/image2.png'
-import coracao2 from './imagens/coracao2.svg'
-import polygon from './imagens/Polygon1.svg'
-import coracaoVerde from './imagens/coracaoVerde.svg'
+import image2 from './imagens/image2.svg'
+import Ellipse1 from './imagens/Ellipse1.svg'
+import Polygon1 from './imagens/Polygon1.svg'
+import Ponto from './imagens/Ponto.svg'
+import circulo from './imagens/Circulo.svg'
+import retangulo from './imagens/Rectangle.svg'
+import seta from './imagens/Arrow.svg'
+import coracao from './imagens/Coracao.svg'
+import coracaoverde from './imagens/Coracaoverde.svg'
+
+
 
 export default function Dashboard(){
     const [favorite,setFavorite]=useState(false)
@@ -11,27 +18,27 @@ export default function Dashboard(){
 
     return(
         <div className='dashboard'>
-            <img className='img' src={image2}/>
-            <div id='d1'>Playlist</div>   
-            <div id='d2'>Daily Mix</div>
-            <div id='d3'>Red Hot Chili Peppers, Coldplay e mais</div>
-            <div id='d4'>Spotify - 50 músicas</div> 
-            <div id='d5'>1h 7min</div> 
-            <div>
-                <div id='d6'>
-                    <img className='img3' src={polygon}/>
-                </div> 
-                <img className='img4' src={favorite?coracao2:coracaoVerde}
+            <img className='img' src = {image2} />
+            <p className='p'>Playlist</p>
+            <p className='p1'>Daily Mix 1</p>
+            <p className='p2'>Red Hot Chili Peppers, Coldplay e mais</p>
+            <p className='p3'>Spotify - 50 músicas</p>
+            <p className='p4'>1h 7min</p>
+            <img className='img1' src = {Ellipse1} />
+            <img className='img2' src = {Polygon1} />
+            <p className='p5'>#TÍTULO</p>
+            <p className='p6'>ÁLBUM</p>
+            <div className='borda'></div>
+            <img className='img3' src = {Ponto} />
+            <img className='img4' src = {Ponto} />
+            <img className='img5' src = {Ponto} />
+            <img className='img6' src = {circulo} />
+            <img className='img7' src = {retangulo} />
+            <img className='img8' src = {seta} />
+            <img className='img9' src={favorite?coracaoverde:coracao}
                     onClick={()=>setFavorite(!favorite)}
                 />
-            </div>
-           
-            <div>
-                <p className='p1'>#Título</p>
-                <p className='p2'>Álbum</p>
-                
-            </div>
-            <div id='d8'></div>
+            
         </div>
     );
 }
