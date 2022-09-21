@@ -1,233 +1,53 @@
-.dashboard {
-    position: absolute;
-    width: 1259px;
-    height: 1025px;
-    left: 181px;
-    top: 0px;
+.dashboard{
+    width: 87vw;
+    height: auto;
     background: linear-gradient(180deg, #17A6E4 0%, #000000 80.84%);
-    mix-blend-mode: normal;
-  }
-
-.img{
-    position: absolute;
-    width: 224px;
-    height: 224px;
-    left: 73px;
-    top: 204px;
 }
 
-.p{
-    position: absolute;
-    width: 61px;
-    height: 21px;
-    left: 341px;
-    top: 240px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 21px;
-/* identical to box height */
-    color: #FFFFFF;
+.top{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 190px;
 }
 
-.p1{
-    position: absolute;
-    width: 248px;
-    height: 58px;
-    left: 339px;
-    top: 250px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
-    /* identical to box height */
-    color: #FFFFFF;
+.top img {
+    margin-left: 73px;
 }
 
-.p2{
-    position: absolute;
-    width: 320px;
-    height: 21px;
-    left: 341px;
-    top: 350px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 21px;
-    /* identical to box height */
-    color: #FFFFFF;
+.top div{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+    margin-left: 42px;
+    color: #fff;
 }
 
-.p3{
-    position: absolute;
-    width: 173px;
-    height: 21px;
-    left: 341px;
-    top: 390px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 21px;
-    /* identical to box height */
-
-
-    color: #FFFFFF;
-}
-
-.p4{
-    position: absolute;
-    width: 72px;
-    height: 22px;
-    left: 500px;
-    top: 390px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    /* identical to box height */
-
-
+.top span{
     color: rgba(255, 255, 255, 0.44);
 }
 
-.img1{
-    position: absolute;
-    width: 65px;
-    height: 65px;
-    left: 73px;
-    top: 573px;
+.top p{
+    font-size: 17px;
+    margin: 10px 0px;
+    /* margin: vertical horizontal */
+    /* margin: top right bottom left */
+    /* margin: all */
 }
 
-.img2{
-    position: absolute;
-    width: 34px;
-    height: 35px;
-    left: 93px;
-    top: 589px;
-
+.top h1{
+    font-size: 48px;
+    margin: 0px;
 }
 
-.p5{
-    position: absolute;
-    width: 77px;
-    height: 22px;
-    left: 73px;
-    top: 744px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    /* identical to box height */
-    color: #D9D9D9;
+.mid{
+    padding-left: 73px;
 }
-
-.p6{
-    position: absolute;
-    width: 64px;
-    height: 22px;
-    left: 739px;
-    top: 744px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    /* identical to box height */
-    color: #D9D9D9;
+.mid img{
+    margin-top: 145px;
+    margin-right: 20px;
 }
-
-.borda{
-    position: absolute;
-    width: 1133px;
-    height: 0px;
-    left: 61px;
-    top: 794px;
-
-    border: 1px solid #CCCCCC;
-    transform: rotate(-0.1deg);
-}
-
-.img3{
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    left: 286px;
-    top: 602px;
-
-}
-
-.img4{
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    left: 298px;
-    top: 602px;
-
-}
-
-.img5{
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    left: 310px;
-    top: 602px;
-
-}
-
-.img6{
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 36px;
-    height: 36px;
-    left: 230px;
-    top: 588px;
-}
-
-.img7{
-    position: absolute;
-    width: 18px;
-    height: 2px;
-    left: 239px;
-    top: 612px;
-
-}
-
-.img8{
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    left: 240px;
-    top: 593px;
-}
-
-.img9{
-    width: 44px;
-    height: 52px;
-    left: 166px;
-    top: 573px;
-}
-
-.img4:hover{
+.img9:hover {
     cursor: pointer;
-    fill: #3FE168
 }

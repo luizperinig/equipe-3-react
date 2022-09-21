@@ -1,8 +1,5 @@
 .navbar {
-    position: absolute;
-    width: 253px;
-    height: 1024px;
-    left: 0px;
-    top: 0px;
+    width: 13vw;
+    height: auto;
     background: #000000;
-  }
+}
