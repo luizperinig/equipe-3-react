@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './Dashboard.css'
 import Play from './imagens/Play.svg'
 import coracao from './imagens/Coracao.svg'
-import coracaoverde from './imagens/Coracaoverde.svg'
+import coracaoverde from './imagens/coracaoVerde.svg'
 import download from './imagens/download.svg'
 import image2 from './imagens/image2.svg'
 import pontos from './imagens/pontos.svg'
@@ -30,6 +30,13 @@ export default function Dashboard(){
                     />
                 <img className='img1' src = {download} alt=''/>
                 <img className= 'img3' src={pontos} alt=''/>
+            </div>
+            <div className="bottom">
+                <div>
+                    <p>#TÍTULO</p>
+                    <p>ÁLBUM</p>
+                </div>
+                <hr></hr>
             </div>
 
         </div>
