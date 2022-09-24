@@ -66,18 +66,24 @@
 
 .bottom p {
     font-size: 18px;
-    margin-right: 600px;
+    margin-right: 550px;
 }
 
 .users{
     display: flex;
     flex-direction: column;
+    padding-left: 73px;
 }
 
 .user{
+    display: flex;
+    flex-direction: row;
     font-size: 18px;
     margin-top: 10px; 
-    margin-left: 73px;   
+    margin-right: 30px; 
     color: #D9D9D9;
-    
+}
+
+.user div{
+    margin-right: 500px;
 }

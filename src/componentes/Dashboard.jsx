@@ -40,15 +40,15 @@ export default function Dashboard({musicas}){
                 <hr></hr> 
             </div> 
             <div> 
-                <div>
-                    <div className='users'>
-                        {musicas.map((user, index) => (
-                            <div key={index} className='user'>
-                                {user.id} - {user.name} {user.banda} {user.album}
-                            </div>
-                        ))}
-                    </div>
+                <div className='users'>
+                    {musicas.map((user, index) => (
+                        <div key={index} className='user'>
+                            {user.id} - <div>{user.name} <p>{user.banda}</p></div> {user.album}
+                        </div>
+                    ))}
                 </div>
+                   
+                
             </div> 
             
 
