@@ -8,7 +8,7 @@ import image2 from './imagens/image2.svg'
 import pontos from './imagens/pontos.svg'
 
 
-export default function Dashboard(){
+export default function Dashboard({musicas}){
     const [favorite,setFavorite]=useState(false)
 
 
@@ -35,9 +35,22 @@ export default function Dashboard(){
                 <div>
                     <p>#TÍTULO</p>
                     <p>ÁLBUM</p>
+                    
                 </div>
-                <hr></hr>
-            </div>
+                <hr></hr> 
+            </div> 
+            <div> 
+                <div>
+                    <div className='users'>
+                        {musicas.map((user, index) => (
+                            <div key={index} className='user'>
+                                {user.id} - {user.name} {user.banda} {user.album}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div> 
+            
 
         </div>
     );

@@ -68,3 +68,16 @@
     font-size: 18px;
     margin-right: 600px;
 }
+
+.users{
+    display: flex;
+    flex-direction: column;
+}
+
+.user{
+    font-size: 18px;
+    margin-top: 10px; 
+    margin-left: 73px;   
+    color: #D9D9D9;
+    
+}
