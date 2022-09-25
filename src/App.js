@@ -7,9 +7,9 @@ import "./App.css"
 
 export default function App(){
     const data = [
-      {id: "1", name: "Musica 1", banda: "banda 1", album: "album 1"},
-      {id: "2", name: "Musica 2", banda: "banda 2", album: "album 2"},
-      {id: "3", name: "Musica 3", banda: "banda 3", album: "album 3"},
+      {id: "1", name: "The Zephyr Song", banda: "Red Hot Chili Pepers", album: "By The Way"},
+      {id: "2", name: "Talk", banda: "Coldplay", album: "X&Y"},
+      {id: "3", name: "Cidade Negra", banda: "Firmamento", album: "Cidade Negra Acústico MTV"},
   ];
   
   return(

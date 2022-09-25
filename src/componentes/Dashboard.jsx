@@ -6,6 +6,8 @@ import coracaoverde from './imagens/coracaoVerde.svg'
 import download from './imagens/download.svg'
 import image2 from './imagens/image2.svg'
 import pontos from './imagens/pontos.svg'
+import relogio from './imagens/clock.svg'
+import lixeira from './imagens/delete.svg'
 
 
 export default function Dashboard({musicas}){
@@ -35,16 +37,21 @@ export default function Dashboard({musicas}){
                 <div>
                     <p>#TÍTULO</p>
                     <p>ÁLBUM</p>
+                    <img className='relogio' src={relogio} alt=''/>
                     
-                </div>
-                <hr></hr> 
+                </div>    
             </div> 
-            <div> 
+            <hr className='linha'></hr>
+            <div className='tabela'> 
                 <div className='users'>
                     {musicas.map((user, index) => (
+                        <section>
                         <div key={index} className='user'>
-                            {user.id} - <div>{user.name} <p>{user.banda}</p></div> {user.album}
+                            <div className='id'>{user.id}</div>  <div>{user.name} <br/> {user.banda}</div> 
+                            
                         </div>
+                        <div className='album'> {user.album} </div>
+                        </section>
                     ))}
                 </div>
                    
