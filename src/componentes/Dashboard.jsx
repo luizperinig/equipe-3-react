@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './Dashboard.css'
 import Play from './imagens/Play.svg'
-import coracao from './imagens/Coracao.svg'
-import coracaoverde from './imagens/coracaoVerde.svg'
+import coracao from './imagens/coracaoNormal.svg'
+import coracaoverde from './imagens/coracao_preenchido.svg'
 import download from './imagens/download.svg'
 import image2 from './imagens/image2.svg'
 import pontos from './imagens/pontos.svg'
@@ -10,9 +10,13 @@ import relogio from './imagens/clock.svg'
 import lixeira from './imagens/delete.svg'
 
 
+
+
 export default function Dashboard({musicas}){
     const [favorite,setFavorite]=useState(false)
-
+    const [like,setLike]=useState(false) 
+    
+ 
 
     return(
         <div className='dashboard'>
@@ -46,11 +50,11 @@ export default function Dashboard({musicas}){
                         {musicas.map(user => (
                         <tr key={user.id}>
                             <td>{user.id}</td>
-                            <td>{user.name}<br/>{user.banda}</td>
-                            <td>{user.album}</td>
+                            <td className='songName'>{user.name}<br/>{user.banda}</td>
+                            <td className='albumName'>{user.album}</td>
                             <td>
-                                <img className='img10' src={favorite?coracaoverde:coracao} alt=''
-                                onClick={()=>setFavorite(!favorite)}/>
+                                <img className='img10' src={like?coracaoverde:coracao} alt=''
+                                onClick={()=>setLike(!like)}/>
                                 <img className='img11' src={lixeira} alt=''/>
                             </td>
                         </tr>

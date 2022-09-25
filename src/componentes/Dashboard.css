@@ -57,6 +57,7 @@
     margin-top: 80px;
     display: flex;
     flex-direction:row;
+
 }
 
 .bottom div{
@@ -80,10 +81,12 @@
     height: 27.07px;
     width: 28px;
     padding-top: 15px;
+    margin-left: 270px;
 }
 
 .line{
     width: 80vw;
+    margin-top: 0px;
 }
 
 .img10{
@@ -96,5 +99,15 @@
 
 .user td{
     text-align: left;
-    column-width: 180px;
+    
 }
+
+.songName{
+    padding-left: 10px;
+    padding-right: 344px;  
+}
+
+.albumName{
+    padding-right: 545px;
+}
+
