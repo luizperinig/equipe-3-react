@@ -68,26 +68,12 @@
 
 .bottom p {
     font-size: 18px;
-    margin-right: 550px;
-}
-
-.users{
-    display: flex;
-    flex-direction: column;
-    padding-left: 73px;
+    margin-right: 450px;
 }
 
 .user{
-    display: flex;
-    flex-direction: row;
-    font-size: 18px;
-    margin-top: 10px; 
-    margin-right: 30px; 
+    padding-left: 73px;
     color: #D9D9D9;
-}
-
-.user div{
-    margin-right: 20px;
 }
 
 .relogio{
@@ -96,19 +82,19 @@
     padding-top: 15px;
 }
 
-.linha{
-    width: 1350px;
+.line{
+    width: 80vw;
 }
 
-.album{
-    
-    margin-left: 620px;
-    color: white;
-    
+.img10{
+    cursor: pointer;
 }
 
-.id{
-    padding-top: 12px;
-    
+.img11{
+    cursor: pointer;
 }
 
+.user td{
+    text-align: left;
+    column-width: 180px;
+}

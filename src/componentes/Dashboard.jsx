@@ -38,25 +38,25 @@ export default function Dashboard({musicas}){
                     <p>#TÍTULO</p>
                     <p>ÁLBUM</p>
                     <img className='relogio' src={relogio} alt=''/>
-                    
                 </div>    
             </div> 
-            <hr className='linha'></hr>
-            <div className='tabela'> 
-                <div className='users'>
-                    {musicas.map((user, index) => (
-                        <section>
-                        <div key={index} className='user'>
-                            <div className='id'>{user.id}</div>  <div>{user.name} <br/> {user.banda}</div> 
-                            
-                        </div>
-                        <div className='album'> {user.album} </div>
-                        </section>
-                    ))}
-                </div>
-                   
-                
-            </div> 
+            <hr className='line'></hr>
+            <table className='user'>
+                   <tbody>
+                        {musicas.map(user => (
+                        <tr key={user.id}>
+                            <td>{user.id}</td>
+                            <td>{user.name}<br/>{user.banda}</td>
+                            <td>{user.album}</td>
+                            <td>
+                                <img className='img10' src={favorite?coracaoverde:coracao} alt=''
+                                onClick={()=>setFavorite(!favorite)}/>
+                                <img className='img11' src={lixeira} alt=''/>
+                            </td>
+                        </tr>
+                        ))}
+                    </tbody>
+            </table> 
             
 
         </div>
