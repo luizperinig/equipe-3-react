@@ -69,7 +69,10 @@
 
 .bottom p {
     font-size: 18px;
-    margin-right: 450px;
+}
+
+#p1 {
+    padding-left: 27vw;
 }
 
 .user{
@@ -77,37 +80,14 @@
     color: #D9D9D9;
 }
 
-.relogio{
+.clock{
     height: 27.07px;
     width: 28px;
     padding-top: 15px;
-    margin-left: 270px;
+    padding-left: 35vw;
 }
 
 .line{
     width: 80vw;
     margin-top: 0px;
 }
-
-.img10{
-    cursor: pointer;
-}
-
-.img11{
-    cursor: pointer;
-}
-
-.user td{
-    text-align: left;
-    
-}
-
-.songName{
-    padding-left: 10px;
-    padding-right: 344px;  
-}
-
-.albumName{
-    padding-right: 545px;
-}
-

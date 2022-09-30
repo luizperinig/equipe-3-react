@@ -1,22 +1,34 @@
 import React, {useState, useEffect} from 'react'
 import './Dashboard.css'
+
+//icons
 import Play from './imagens/Play.svg'
-import coracao from './imagens/coracaoNormal.svg'
-import coracaoverde from './imagens/coracao_preenchido.svg'
+import heart from './imagens/emptyHeart.svg'
+import greenHeart from './imagens/filledHeart.svg'
 import download from './imagens/download.svg'
 import image2 from './imagens/image2.svg'
-import pontos from './imagens/pontos.svg'
-import relogio from './imagens/clock.svg'
-import lixeira from './imagens/delete.svg'
+import dots from './imagens/dots.svg'
+import clock from './imagens/clock.svg'
+import trash from './imagens/delete.svg'
+
+import Row from './Row.jsx'
 
 
 
-
-export default function Dashboard({musicas}){
-    const [favorite,setFavorite]=useState(false)
-    const [like,setLike]=useState(false) 
-    
+export default function Dashboard(){
+    const[favorite,setFavorite] = useState(false)
  
+    const[musicArray, setMusicArray] = useState([
+        {id: "1", name: "The Zephyr Song", band: "Red Hot Chili Pepers", album: "By The Way"},
+        {id: "2", name: "Talk", band: "Coldplay", album: "X&Y"},
+        {id: "3", name: "Cidade Negra", band: "Firmamento", album: "Cidade Negra Acústico MTV"}
+    ]);
+
+    function removeRow(id){
+        let newArray = musicArray.filter(item  => item.id != id);
+
+        setMusicArray(newArray);
+    }
 
     return(
         <div className='dashboard'>
@@ -31,38 +43,29 @@ export default function Dashboard({musicas}){
             </div>
             <div className="mid">
                 <img className='img1' src = {Play} alt=''/>
-                <img className='img9' src={favorite?coracaoverde:coracao} alt=''
+                <img className='img9' src={favorite?greenHeart:heart} alt=''
                         onClick={()=>setFavorite(!favorite)}
                     />
                 <img className='img1' src = {download} alt=''/>
-                <img className= 'img3' src={pontos} alt=''/>
+                <img className= 'img3' src={dots} alt=''/>
             </div>
             <div className="bottom">
                 <div>
                     <p>#TÍTULO</p>
-                    <p>ÁLBUM</p>
-                    <img className='relogio' src={relogio} alt=''/>
+                    <p id = 'p1'>ÁLBUM</p>
+                    <img className='clock' src={clock} alt=''/>
                 </div>    
             </div> 
             <hr className='line'></hr>
             <table className='user'>
                    <tbody>
-                        {musicas.map(user => (
-                        <tr key={user.id}>
-                            <td>{user.id}</td>
-                            <td className='songName'>{user.name}<br/>{user.banda}</td>
-                            <td className='albumName'>{user.album}</td>
-                            <td>
-                                <img className='img10' src={like?coracaoverde:coracao} alt=''
-                                onClick={()=>setLike(!like)}/>
-                                <img className='img11' src={lixeira} alt=''/>
-                            </td>
-                        </tr>
+                        {musicArray.map(item => (
+                            <Row musicID={item.id} musicName={item.name} musicBand={item.band} 
+                            musicAlbum={item.album}
+                            deleteRow={() => removeRow(item.id)}/>
                         ))}
                     </tbody>
             </table> 
-            
-
         </div>
     );
 }

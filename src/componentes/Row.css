@@ -1,0 +1,17 @@
+.cursor_pointer {
+    cursor: pointer;
+}
+
+.user td{
+    text-align: left;
+    
+}
+
+.songName{
+    padding-left: 10px; 
+}
+
+.albumName{
+    padding-right: 545px;
+    padding-left: 22vw;
+}
