@@ -2,14 +2,14 @@ import React, {useState, useEffect} from 'react'
 import './Dashboard.css'
 
 //icons
-import Play from './imagens/Play.svg'
+import play from './imagens/play.svg'
 import heart from './imagens/emptyHeart.svg'
 import greenHeart from './imagens/filledHeart.svg'
 import download from './imagens/download.svg'
-import image2 from './imagens/image2.svg'
+import playlistImage from './imagens/playlistImage.svg'
 import dots from './imagens/dots.svg'
 import clock from './imagens/clock.svg'
-import trash from './imagens/delete.svg'
+
 
 import Row from './Row.jsx'
 
@@ -33,7 +33,7 @@ export default function Dashboard(){
     return(
         <div className='dashboard'>
             <div className="top">
-                <img id='img' src = {image2} alt='' />
+                <img id='img' src = {playlistImage} alt='' />
                 <div>
                     <p>Playlist</p>
                     <h1>Daily Mix 1</h1>
@@ -42,7 +42,7 @@ export default function Dashboard(){
                 </div>
             </div>
             <div className="mid">
-                <img className='img1' src = {Play} alt=''/>
+                <img className='img1' src = {play} alt=''/>
                 <img className='img9' src={favorite?greenHeart:heart} alt=''
                         onClick={()=>setFavorite(!favorite)}
                     />

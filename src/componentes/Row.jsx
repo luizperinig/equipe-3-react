@@ -3,7 +3,7 @@ import  React, {useState} from 'react'
 // icons
 import greenHeart from './imagens/filledHeart.svg'
 import heart from './imagens/emptyHeart.svg'
-import trash from './imagens/delete.svg'
+import trash from './imagens/trash.svg'
 
 import './Row.css'
 
