@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import './Dashboard.css'
 
 //icons
-import play from './imagens/play.svg'
+import play from './imagens/Play.svg'
 import heart from './imagens/emptyHeart.svg'
 import greenHeart from './imagens/filledHeart.svg'
 import download from './imagens/download.svg'
