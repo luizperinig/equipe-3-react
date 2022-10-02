@@ -18,6 +18,8 @@ export default function Row(props){
             <td>
                 <img className='cursor_pointer' src={like?greenHeart:heart} alt=''
                 onClick={()=>setLike(!like)}/>
+            </td>
+            <td>    
                 <img className='cursor_pointer' src={trash} alt=''
                 onClick={() => props.deleteRow()}/>
             </td>
