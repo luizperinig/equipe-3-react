@@ -1,5 +1,8 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import './Dashboard.css'
+
+// requests
+import createUser from '../requests/createUser';
 
 //icons
 import play from './imagens/Play.svg'
@@ -10,9 +13,7 @@ import playlistImage from './imagens/playlistImage.svg'
 import dots from './imagens/dots.svg'
 import clock from './imagens/clock.svg'
 
-
 import Row from './Row.jsx'
-
 
 
 export default function Dashboard(){
@@ -24,8 +25,16 @@ export default function Dashboard(){
         {id: "3", name: "Cidade Negra", band: "Firmamento", album: "Cidade Negra Acústico MTV"}
     ]);
 
+    function create(){
+        createUser()
+            .then((res) => console.log('Certo'))
+            .catch((err) => {
+                console.log(err);
+            });
+    }
+
     function removeRow(id){
-        let newArray = musicArray.filter(item  => item.id != id);
+        let newArray = musicArray.filter(item  => item.id !== id);
 
         setMusicArray(newArray);
     }
@@ -42,7 +51,7 @@ export default function Dashboard(){
                 </div>
             </div>
             <div className="mid">
-                <img className='img1' src = {play} alt=''/>
+                <img onClick={create} className='img1' src = {play} alt=''/>
                 <img className='img9' src={favorite?greenHeart:heart} alt=''
                         onClick={()=>setFavorite(!favorite)}
                     />

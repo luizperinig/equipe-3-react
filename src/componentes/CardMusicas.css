@@ -1,0 +1,15 @@
+.card{
+    width: 196px;
+    height: 280px;
+    border-radius: 10px;
+    background-color: #1F1F1F;
+}
+
+p{
+    font-style: normal;
+    font-size: 15px;
+}
+
+.paragrafo{
+    color: #8C8C8C;
+}
