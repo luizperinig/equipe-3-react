@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './Dashboard.css'
 
 // requests
-import createUser from '../requests/createUser';
+import CreateUser from '../requests/CreateUser';
 
 //icons
 import play from './imagens/Play.svg'
@@ -26,7 +26,7 @@ export default function Dashboard(){
     ]);
 
     function create(){
-        createUser()
+        CreateUser()
             .then((res) => console.log('Certo'))
             .catch((err) => {
                 console.log(err);

@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from "react";
-import './CardMusicas.jsx'
+import './CardMusicas.css'
 import axios from 'axios'
 
 
@@ -18,8 +18,10 @@ export default function CardMusicas(){
 
     return(
         <div className="card">
-            <div></div>
-            <p>Engenheiros</p>
+            <div >
+                <img className="img" src="https://i.scdn.co/image/ab6761610000f178027d7f808590b06dd08f7e0f" alt=''/>
+            </div>
+            <p>Royal Blood</p>
             <p className="paragrafo">Artista</p>
         </div>
     );

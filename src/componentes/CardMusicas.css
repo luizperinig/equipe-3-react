@@ -8,8 +8,22 @@
 p{
     font-style: normal;
     font-size: 15px;
+    margin-left: 16px;
+    color: whitesmoke;
+}
+
+.img{
+    margin-top: 10px; 
+    margin-left: 16px;
+    border-radius: 100%;
 }
 
 .paragrafo{
     color: #8C8C8C;
 }
+
+/* { 
+    "height": 160,
+    "url": "https://i.scdn.co/image/ab6761610000f178027d7f808590b06dd08f7e0f",
+    "width": 160
+ } */

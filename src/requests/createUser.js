@@ -1,6 +1,6 @@
 import api from "../services/api";
 
-export default function createUser(){
+export default function CreateUser(){
     const body = {
         name: 'Joaquim',
         email:'mail@mail.com',
